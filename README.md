@@ -4,7 +4,7 @@ The Pi Plates SPI protocol works in one of two ways. The DAQCplate, MOTORplate, 
 
 ![Timing Based Example](TimingBasedDiagram.png)
 
-The TINKERplate, DAQC2plate, and THERMOplate, on the other hand, all use an ACK pin that is set by the pi plate when it is ready to return information. The raspberry pi waits for this pin to be low before it attempts to get a response. In the example shown, the ACK pin going low is lined up with the CS going high, however, the ACK pin tends to go low before the chip select goes high, and can go low afterwards.
+The TINKERplate, DAQC2plate, and THERMOplate, on the other hand, all use an ACK pin that is set by the pi plate when it is ready to return information. The raspberry pi waits for this pin to be low before it attempts to get a response. In the example shown, the ACK pin going low is lined up with the CS going high, however, the ACK pin tends to go low before the chip select goes high, and can go low afterwards. The point "b" on the timing section is for the chip select, not the ack bit. Beyond that, the response and command work as listed above.
 
 ![Ack based example](AckBasedDiagram.png)
 
