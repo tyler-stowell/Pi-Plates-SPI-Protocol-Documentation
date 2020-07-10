@@ -1,0 +1,16 @@
+{signal: [
+  {name: 'CLK', wave: '0...Pp|Pp0......Pp|Pp0...'},
+  {name: 'Data', wave: 'x..3..|..x.....=..|..x...', data: ['command             ', 'response             ']},
+  {name: 'MOSI', wave: '0..1..|..0........|......'},
+  {name: 'MISO', wave: '0.....|........1..|..0...'},
+  {name: 'CS', wave: '1.0...|....1..0...|....1.'},
+  {name: 'FRAME', wave: '01....|...........|.....0'},
+  {name: 'ACK', wave: '1.....|....0......|......'},
+  {node:'.........a.b..c......d.e'}
+ ],
+ edge: [
+  'a<->b 35 us', 'b<->c 75 us', 'd<->e 5 us'
+ 
+ ]
+
+}
